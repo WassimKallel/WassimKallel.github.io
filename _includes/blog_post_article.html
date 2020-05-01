@@ -10,10 +10,10 @@
     </p>
     <span class="disqus-comment-count" data-disqus-identifier="{{ page.url }}"></span>
     <div class="post-categories">
-      {% if post %} {% assign categories = post.categories %} {% else %} {%
-      assign categories = page.categories %} {% endif %} Category : {% for
-      category in categories %}
-      <a href="{{site.baseurl}}/blog/categories/{{category|slugize}}">{{category}}</a>
+      {% if post %} {% assign tags = post.tags %} {% else %} {%
+      assign tags = page.tags %} {% endif %} Tags : {% for
+      tag in tags %}
+      <a href="{{site.baseurl}}/blog/tags/{{tag|slugize}}">{{tag}}</a>
       {% unless forloop.last %}&nbsp;{% endunless %} {% endfor %}
     </div>
   </div>

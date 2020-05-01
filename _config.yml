@@ -1,0 +1,171 @@
+title: Wassim Kallel
+subtitle: Cloud and DevOps Engineer
+description: >- # this means to ignore newlines until "baseurl:"
+  Wassim Kallel - Cloud and DevOps Engineer
+
+url: "wassimkallel.github.io" # the base hostname & protocol for your site, e.g. https://example.github.io
+baseurl: "/" # the subpath of your site, e.g. /blog
+
+urls:
+    - text: About Me
+      url: /about
+    - text: Blog
+      url: /blog
+    - text: Gallery
+      url: /gallery
+    - text: Contact Me
+      url : /contact
+
+
+# Edit these details
+
+author_logo: WassimKallel-800px.png
+author: Wassim Kallel
+author_bio: Hi, my name is Wassim Kallel. I am a Cloud and DevOps Engineer at Think.iT, with strong team skills and a default to action. Highly adaptable and proficient in various technologies in order to deliver efficient solutions. Most proud of contributing to open source projects and holding workshops and conferences about DevOps
+author_email: "wassim.kallel@hotmail.com"
+author_location: Tunisia
+author_website_url: "https://wassimkallel.github.io"
+typewrite-text: Cloud and DevOps Engineer
+
+author_work_experiences:
+            - company_name: Think.iT
+              company_logo: thinkit.png
+              company_url: https://think-it.io
+              designation: Cloud and DevOps Engineer
+              description: 
+                - Developing and deploying bespoke and reliable solutions together with our partners to help them reach their product goals faster.
+                - Focusing on microservices and serverless cloud native architectures, building solid, high-performing infrastructures and creating & managing CI/CD pipelines.
+                - Working with BMW’s AI Labs, building a cloud native architecture that ingests and analyzes millions of data points from telemetry data streams; also exposing GraphQL endpoints, with the the focus on IaC using Terraform and CloudFormation.
+                - Built a serverless competitive programming platform with in-browser code editing and cloud based remote execution and validation.Worked on various Google Products
+              visibility: true
+            - company_name: Asayer
+              company_logo: asayer.png
+              company_url: https://asayer.io
+              designation: Cloud Engineer
+              description: 
+                - Adapted macOS to the cloud.
+                - Automated iOS simulator and Safari Browser workloads.
+                - Designed and developed a real-time monitoring dashboard for managing virtual machines and data inside Asayer.io
+              visibility: true
+            - company_name: Wizzlabs
+              company_logo: wizzlabs.png
+              company_url: https://www.wizzlabs.com
+              designation: Part-Time Software Developer
+              description: 
+                - Developed and deployed desktop application to enhance user's web browsing experience.
+                - Designed and implemented a framework to create software installer/uninstaller on Windows.
+                - Build an iOS web Browser with an intuitive user interface and a custom video player that adds surround sound.
+              visibility: true
+
+author_education_details:
+              - college_logo: esprit.png
+                college_name: ESPRIT
+                college_url: http://esprit.tn
+                college_degree: Cloud Engineer
+                description: Master of Software Engineering
+                visibility: true
+              - college_logo: insat.jpg
+                college_name: INSAT
+                college_url: http://www.insat.rnu.tn
+                college_degree: CS Engineer
+                description: Bachelor of Software Developement
+                visibility: true
+
+author_project_details:
+              - project_thumbnail: codecommit-slack.png
+                project_title: CodeCommit to Slack Bot
+                project_description: A Serverless bot to notify Slack users about CodeCommit repository changes
+                github: https://github.com/Think-iT-Labs/CodeCommit-Slackbot
+                visibility: true
+              - project_thumbnail: dopsieOrm.png
+                project_title: DopsieOrm
+                project_description: Lightweight ORM for Java / SQL developers.
+                github: https://github.com/Dopsie/DopsieORM
+                visibility: true
+              - project_thumbnail: enahouni1.png
+                project_title: Ena Houni
+                project_description: A Platform built with colleges from Think.iT for volunteering during COVID-19 pandemic lockdown
+                project_url: https://enahouni.com
+                visibility: true
+              - project_thumbnail: codenroll.png
+                project_title: Code'n'Roll
+                project_description: A competitive programming platform with cloud based code execution and assessement
+                project_url: https://codenroll.think-it.io
+                visibility: true
+              - project_thumbnail: crunchy.png
+                project_title: Crunchy
+                project_description: Crunchy is a lightweight Browser with a great User Experience, compatible with all iOS devices (iPhones, iPads)
+                github: https://github.com/WassimKallel/Crunchy
+                visibility: true
+
+# social links
+github_username:  WassimKallel
+facebook_username: wattouma
+linkedin_username: wassimkallel
+
+
+#for comments ( we got Disqus and Hyvor Commenting, uncomment the one you want to use )
+disqus_shortname: wassimkallel
+
+
+# formspree (contact form)
+formspree_email: wassim.kallel@hotmail.com
+
+# syntax highlighter
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# google analytics
+google_analytics: UA-165287188-1
+
+# Choose what to show ( can be true or false)
+show_author_work_experiences: true
+show_author_education_details: true
+show_author_project_details: true
+
+# pagination of posts
+paginate: 4
+per_page: 4
+paginate_path: "/blog/page/:num/"
+
+# Gallery
+defaults:
+  -
+    scope:
+      path: "gallery"
+    values:
+      permalink: /:path/:basename:output_ext
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-algolia
+  - jekyll-menus
+
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+destination: ./build

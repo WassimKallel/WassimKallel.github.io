@@ -1,0 +1,8 @@
+*.gem
+.bundle
+.sass-cache
+_site
+.jekyll-cache
+.jekyll-metadata
+vendor
+build/

@@ -36,6 +36,8 @@
 
       {% if page.image %}
         <meta content="{{ site.url }}/assets/img/posts/{{ page.image }}" property="og:image">
+      {% else %}
+        <meta content="{{ site.url }}/assets/img/{{ site.author_logo }}" property="og:image">
       {% endif %}
 
       {% if page.categories %}
@@ -72,6 +74,10 @@
 
       {% if page.header-img %}
         <meta name="twitter:image:src" content="{{ site.url }}/{{ page.header-img }}">
+      {% else if page.image %}
+        <meta name="twitter:image:src" content="{{ site.url }}/{{ page.image }}">
+      {% else %}
+        <meta name="twitter:image:src" content="{{ site.url }}/{{ site.author_logo }}">
       {% endif %}
 
     <link rel="stylesheet" href="/assets/css/main.css" />

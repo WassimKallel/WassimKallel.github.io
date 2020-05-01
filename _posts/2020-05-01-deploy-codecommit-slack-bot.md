@@ -6,6 +6,7 @@ date: '2020-05-01 00:00:00 +01'
 tags:
     - serverless
     - aws
+image: codecommit-slack.png
 summary: How to create a CodeCommit to Slack Bot
 thumbnail: codecommit-slack.png
 comments: true

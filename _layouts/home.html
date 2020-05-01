@@ -45,8 +45,8 @@ layout: default
                   <p class="recent-article-link">{{post.title}}</p>
                 </div>
                 <div id="article-alert">
-                  {% for cat in post.category limit:2 %}
-                   <button class="btn btn-sm btn-dark">{{cat}}</button>
+                  {% for tag in post.tags limit:2 %}
+                   <button class="btn btn-sm btn-dark">{{tag}}</button>
                   {% endfor %}
                 </div>
               </div>

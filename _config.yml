@@ -3,8 +3,8 @@ subtitle: Cloud and DevOps Engineer
 description: >- # this means to ignore newlines until "baseurl:"
   Wassim Kallel - Cloud and DevOps Engineer
 
-url: "wassimkallel.github.io" # the base hostname & protocol for your site, e.g. https://example.github.io
-baseurl: "/" # the subpath of your site, e.g. /blog
+url: wassimkallel.github.io # the base hostname & protocol for your site, e.g. https://example.github.io
+baseurl: / # the subpath of your site, e.g. /blog
 
 urls:
     - text: About Me

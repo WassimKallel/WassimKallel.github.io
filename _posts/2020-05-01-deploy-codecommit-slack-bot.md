@@ -16,7 +16,7 @@ comments: true
 
 **1. What’s AWS CDK?** ​
 
-AWS CDK is an Infrastructure as Code solution, similar to AWS CloudFormation and HashiCorp’s Terraform, Where you can have you can have your infrastructure defined as Code in a project which you can deploy easily, keep track of its changes (Assuming you use a Version Control system like Git for that) and acts as a documentation for your simple or complex solution design. ​
+AWS CDK is an Infrastructure as Code solution, similar to AWS CloudFormation and HashiCorp’s Terraform, Where you can have your infrastructure defined as Code in a project which you can deploy easily, keep track of its changes (Assuming you use a Version Control system like Git for that) and acts as a documentation for your simple or complex solution design. ​
 
 **2. How does it compare to the others?** ​
 <div class="container table-responsive table-body">
